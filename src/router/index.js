@@ -1,6 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Signup from '../views/Signup.vue'
+import Login from '../views/Login.vue'
+import Scenerio from '../views/Scenerio.vue'
+import Main from '../views/Main.vue'
+import Profile from '../views/Profile.vue'
+import adminPanelScenerio from '../views/AdminPanelScenerio.vue'
+import adminPanelMain from '../views/AdminPanelMain.vue'
+
 
 Vue.use(VueRouter)
 
@@ -10,6 +18,42 @@ const routes = [
     name: 'Home',
     component: Home
   },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: Signup
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
+  },
+  {
+    path: '/scenerio',
+    name: 'scenerio',
+    component: Scenerio
+  },
+  {
+    path: '/main:scenID',
+    name: 'main',
+    component: Main
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: Profile
+  },
+  {
+    path: '/adminPanelScenerio',
+    name: 'adminPanelScenerio',
+    component: adminPanelScenerio
+  },
+  {
+    path: '/adminPanelMain',
+    name: 'adminPanelMain',
+    component: adminPanelMain
+  },
+  
   {
     path: '/about',
     name: 'About',
